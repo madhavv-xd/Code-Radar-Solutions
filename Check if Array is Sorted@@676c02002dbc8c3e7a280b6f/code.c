@@ -1,20 +1,29 @@
 #include <stdio.h>
 
 int main() {
-   int a[];
-   int i , number;
-   scanf("%d" , &number)
-   for(int i = 0; i < number; i++){
-        scanf("%1d" , &a[i])
-   }
-   int n = a.size();
-   for(int i = 0; i < n; i++){
-    if(arr[i] > arr[i-1]){
-        printf("%s", Sorted);
+    int number;
+    printf("Enter the number of elements: ");
+    scanf("%d", &number);
+
+    int a[number];
+    printf("Enter %d elements: ", number);
+    for(int i = 0; i < number; i++) {
+        scanf("%d", &a[i]);
     }
-    else{
-        printf("%s", Not Sorted);
+
+    int isSorted = 1; 
+    for(int i = 1; i < number; i++) {
+        if(a[i] < a[i-1]) {
+            isSorted = 0; 
+            break;
+        }
     }
-   }
+
+    if(isSorted) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
+    }
+
     return 0;
 }
