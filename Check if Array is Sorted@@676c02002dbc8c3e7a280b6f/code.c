@@ -5,7 +5,7 @@ int main() {
    int i , number;
    scanf("%d" , &number)
    for(int i = 0; i < number; i++){
-        scanf("1d" , &a[i])
+        scanf("%1d" , &a[i])
    }
    int n = a.size();
    for(int i = 0; i < n; i++){
