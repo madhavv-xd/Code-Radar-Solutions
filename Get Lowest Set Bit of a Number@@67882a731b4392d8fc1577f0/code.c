@@ -1,13 +1,20 @@
 #include <stdio.h>
 
-int getLowestSetBit(int num) {
-    return num & (~num + 1);
+int getLowestSetBitPosition(int num) {
+    if (num == 0) return -1; 
+    int position = 0;
+    while ((num & 1) == 0) { 
+        num >>= 1;
+        position++;
+    }
+    return position;
 }
 
 int main() {
     int a;
     scanf("%d", &a);
-    int lowestSetBit = getLowestSetBit(a);
-    printf("%d\n", lowestSetBit);
+    int lowestSetBitPos = getLowestSetBitPosition(a);
+    printf("%d\n", lowestSetBitPos);
     return 0;
 }
+
