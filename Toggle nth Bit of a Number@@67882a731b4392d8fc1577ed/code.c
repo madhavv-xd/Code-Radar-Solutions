@@ -9,7 +9,7 @@ int main() {
     int a, b;
     scanf("%d %d", &a, &b);
     int result = clearNthBit(a, b);
-    printf("%d\n", b, result);
+    printf("%d\n",result);
 
     return 0;
 }
