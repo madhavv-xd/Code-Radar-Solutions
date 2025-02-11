@@ -11,7 +11,7 @@ int main() {
     int a, b;
     scanf("%d %d", &a, &b);
     swapNumbers(&a, &b);
-    printf("%d %d\n", a, b);
+    printf("%d %d", a, b);
 
     return 0;
 }
