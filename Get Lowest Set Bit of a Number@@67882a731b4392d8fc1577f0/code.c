@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int getLowestSetBit(int num) {
-    return num & num;
+    return num & -num;
 }
 
 int main() {
