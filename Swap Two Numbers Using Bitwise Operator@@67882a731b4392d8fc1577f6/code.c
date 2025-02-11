@@ -8,10 +8,10 @@ void swapNumbers(int a, int b) {
 }
 
 int main() {
-    int x, y;
-    scanf("%d %d", &x, &y);
-    swapNumbers(&x, &y);
-    printf("%d\n", x, y);
+    int a, b;
+    scanf("%d %d", &a, &b);
+    swapNumbers(&a, &b);
+    printf("%d %d\n", a, b);
 
     return 0;
 }
