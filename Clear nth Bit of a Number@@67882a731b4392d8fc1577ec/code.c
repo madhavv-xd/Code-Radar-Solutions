@@ -1,11 +1,8 @@
 #include <stdio.h>
 
 int clearNthBit(int num, int n) {
-    // Create a mask with the nth bit set to 1
     int mask = 1 << n;
-    // Invert the mask
     mask = ~mask;
-    // Perform bitwise AND with the number
     return num & mask;
 }
 
