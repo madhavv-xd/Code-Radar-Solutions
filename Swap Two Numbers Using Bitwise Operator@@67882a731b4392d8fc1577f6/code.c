@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-void swapNumbers(int a, int b) {
-    if (a == b) return;
-    *a = *a ^ *b;
-    *b = *a ^ *b;
-    *a = *a ^ *b;
+void swapNumbers(int x, int y) {
+    if (x == y) return;
+    *x = *x ^ *y;
+    *y = *x ^ *y;
+    *x = *x ^ *y;
 }
 
 int main() {
