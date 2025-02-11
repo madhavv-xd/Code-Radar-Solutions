@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int a;
-    scanf("%d", &a);
-    printf((a >> a-1) & (1) );
+    int a  , b;
+    scanf("%d %d", &a , &b);
+    printf(a >> (b-1) & 1);
     return 0;
 }
