@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h> // Include the math library
+#include <math.h>
 
 int main() {
     int a, b, c;
