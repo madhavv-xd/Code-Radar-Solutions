@@ -11,9 +11,9 @@ int main(){
                 cnt++;
         }
         if (cnt > 0)
-            printf("%d Not Prime", a);
+            printf("Not Prime");
         else
-            printf("%d Prime", a);
+            printf("Prime");
     }
     return 0;
 }
