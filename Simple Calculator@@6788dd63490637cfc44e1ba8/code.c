@@ -9,8 +9,8 @@ int main() {
            (c == '+') ? a + b : 
            (c == '-') ? a - b : 
            (c == '*') ? a * b : 
-           (c == '/' && b != 0) ? a / b : 
-           (printf("error")));
+           (c == '/' && b != 0) ? a / b : "error"
+    );
            
     return 0;
 }
