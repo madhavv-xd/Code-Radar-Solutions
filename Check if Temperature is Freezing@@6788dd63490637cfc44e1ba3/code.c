@@ -2,6 +2,6 @@
 int main(){
     int a ;
     scanf("%d " , &a );
-    printf((a > 0) ? "Not Freezing" : "Freezing");
+    printf((a > 0) ? "Above Freezing" : "Freezing");
     return 0;
 }
