@@ -10,7 +10,7 @@ int main() {
            (c == '-') ? a - b : 
            (c == '*') ? a * b : 
            (c == '/' && b != 0) ? a / b : 
-           (printf("Error: Division by zero or Invalid operator\n"), 0));
+           (printf("error")));
            
     return 0;
 }
