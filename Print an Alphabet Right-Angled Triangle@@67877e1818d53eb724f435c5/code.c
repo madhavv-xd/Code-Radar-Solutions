@@ -1,12 +1,19 @@
 #include <stdio.h>
 
-int main() {
-    int a;
-    scanf("%d", &a);
-    for(int i = 1; i <= a; i++){
-        for(char j = 'A'; j <= 'A' + i; j++){
-            printf("%d " , j);
+void printAlphabetTriangle(int N) {
+    for (int i = 0; i < N; i++) {
+        for (char ch = 'A'; ch <= 'A' + i; ch++) {
+            printf("%c ", ch);
         }
         printf("\n");
     }
+}
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    
+    printAlphabetTriangle(N);
+    
+    return 0;
 }
