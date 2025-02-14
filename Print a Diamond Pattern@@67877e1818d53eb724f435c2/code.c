@@ -4,18 +4,26 @@ int main() {
     int a;
     scanf("%d", &a);
 
-    for (int i = 0; i < a; i++){
+    // Top half of the diamond
+    for (int i = 0; i < a; i++) {
         for (int j = 0; j < a - i - 1; j++) {
             printf(" ");
         }
         for (int k = 0; k < 2 * i + 1; k++) {
             printf("*");
         }
-         for (int l = 0; l < 2 * i - 1; l++) {
+        printf("\n");
+    }
+
+    for (int i = a - 2; i >= 0; i--) {
+        for (int j = 0; j < a - i - 1; j++) {
+            printf(" ");
+        }
+        for (int k = 0; k < 2 * i + 1; k++) {
             printf("*");
         }
         printf("\n");
     }
-    
+
     return 0;
 }
