@@ -1,9 +1,10 @@
 #include <stdio.h>
-int main(){
-    int n ;
-    scanf("%d" , &n);
-    for(int i = 1; i<10; i++){
-        printf("%d" , n , "x %c" , "%d" , i , "= %c" , "%d" , n*i);
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    for(int i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", n, i, n * i);
     }
-    printf("\n");
+    return 0;
 }
