@@ -3,7 +3,15 @@
 int main(){
     int a;
     scanf("%d", &a);
-    printf("%s", (a % 4 == 0) ? ((a % 100 == 0) ? ((a % 400 == 0) ? "Leap Year" : "Not a Leap Year") : "Leap Year") : "Not a Leap Year");
+    if(a % 4 == 0){
+        printf("Leap Year");
+    }
+    else if(a % 100 == 0 & a % 400 == 0){
+        printf("Leap Year");
+    }
+    else{
+        printf("Not a Leap Year");
+    }
     return 0;
 }
 
