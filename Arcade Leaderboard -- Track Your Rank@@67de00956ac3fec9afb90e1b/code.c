@@ -1,4 +1,4 @@
-void trackPlayerRanks(ranked[] , n , player[] , m , result[]){
+void trackPlayerRanks(int ranked[] , int n , int player[] , int m , int result[]){
     int unqranks[20000] , rank = 0;
     unqranks[rank++] = ranked[0];
 
