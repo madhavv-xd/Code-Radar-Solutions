@@ -1,0 +1,17 @@
+void trackPlayerRanks(ranked[] , n , player[] , m , result[]){
+    int unqranks[20000] , rank = 0;
+    unqranks[rank++] = ranked[0];
+
+    for(int i = 0; i < n; i++){
+        if (ranked[i] != ranked[i-1]){
+            unqranks[rank++] = ranked[i]
+        }
+    }
+    int x = rank - 1; //range 
+    for(int i = 0; i<m; i++){
+        while( x >= 0 && player[i] >= unqranks[x]){
+            x--;
+        }
+        result[i] = pos+2;
+    }
+}
