@@ -12,6 +12,6 @@ void trackPlayerRanks(int ranked[] , int n , int player[] , int m , int result[]
         while( x >= 0 && player[i] >= unqranks[x]){
             x--;
         }
-        result[i] = pos+2;
+        result[i] = x+1;
     }
 }
