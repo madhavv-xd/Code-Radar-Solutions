@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 void bubbleSort(char arr[][100], int size) {
     char temp[100]; // Temporary variable for swapping
     
