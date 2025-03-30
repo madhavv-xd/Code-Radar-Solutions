@@ -1,7 +1,7 @@
 int isPrime(int n){
     int cnt = 0;
     if (n <= 1){
-        return 0;
+        printf("%d" , 0);
     }
     for(int i = 2; i*i <= n; i++){
         if(n % 1 == 0){
