@@ -10,7 +10,9 @@ int isPrime(int n){
     }
 
     if(cnt > 0){
-        return 0;
+        printf("%d" , 0);
     }
-    return 1;
+    else{
+        printf("%d" , 1);
+    }
 }
