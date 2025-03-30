@@ -16,8 +16,23 @@ void selectionSort(char arr[], int n) {
 }
 
 void printArray(char arr[], int n) {
-   
-        printf("%s ", arr);
-    
+    for (int i = 0; i < n; i++) {
+        printf("%c ", arr[i]);  // Corrected format specifier
+    }
+    printf("\n");
+}
 
+int main() {
+    char arr[] = {'s', 'e', 'l', 'e', 'c', 't', 'i', 'o', 'n'};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array: ");
+    printArray(arr, n);
+
+    selectionSort(arr, n);
+
+    printf("Sorted array: ");
+    printArray(arr, n);
+
+    return 0;
 }
