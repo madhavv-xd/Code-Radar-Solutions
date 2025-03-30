@@ -1,4 +1,4 @@
-void isPrime(int n){
+void isPrime(int num){
     int cnt = 0;
     if (n <= 1){
         printf("%d" , 0);
