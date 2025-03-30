@@ -1,11 +1,11 @@
 void isPrime(int num){
     int cnt = 0;
-    if (n <= 1){
+    if (num <= 1){
         printf("%d" , 0);
     }
     else{
-    for(int i = 2; i*i <= n; i++){
-        if(n % 1 == 0){
+    for(int i = 2; i*i <= num; i++){
+        if(num % 1 == 0){
             cnt++;
         }
     }
