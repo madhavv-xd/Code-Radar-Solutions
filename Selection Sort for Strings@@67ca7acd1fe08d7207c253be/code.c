@@ -1,24 +1,25 @@
 #include <stdio.h>
+#include <string.h>
 
+// Selection Sort function
 void selectionSort(char arr[][100], int n) {
     for (int i = 0; i < n - 1; i++) {
         int min = i;
         for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[min]) {
+            if (strcmp(arr[j], arr[min]) < 0) {
                 min = j;
             }
         }
-        // Swap characters
-        char temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
+        char temp[100];
+        strcpy(temp, arr[min]);
+        strcpy(arr[min], arr[i]);
+        strcpy(arr[i], temp);
     }
 }
 
+// Print Array function
 void printArray(char arr[][100], int n) {
     for (int i = 0; i < n; i++) {
-        printf("%c ", arr[i]);  // Corrected format specifier
+        printf("%s\n", arr[i]);
     }
-    printf("\n");
 }
-
