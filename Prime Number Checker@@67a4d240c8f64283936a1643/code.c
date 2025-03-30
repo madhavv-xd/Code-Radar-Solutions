@@ -17,5 +17,4 @@ void isPrime(int n){
         printf("%d" , 1);
     }
     }
-    return 0;
 }
