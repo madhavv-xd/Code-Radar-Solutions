@@ -7,7 +7,7 @@ void caesarCipher(char message[], int shift, char encrypted[]) {
     for(int i = 0; i <  len; i++){
         char c = message[i];
     }
-    if(isalpha(C)){
+    if(isalpha(c)){
         char base = isUpper(c) ? 'A' : 'a';
 
         encrypted[i] = (char)(((c-base+shift) % 26) + base);   
