@@ -13,3 +13,9 @@ void insertionSort(int arr[] , int n){
         arr[j+1] = temp;
     }
 }
+void printArray(int arr[] , int size){
+    for(int i = 0; i < size; i++){
+        printf("%d " , arr[i]);
+    }
+    printf("\n");
+}
