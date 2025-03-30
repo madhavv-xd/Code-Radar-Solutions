@@ -1,21 +1,17 @@
-int isPrime(int n){
-    int cnt = 0;
-    if (n <= 1){
-        printf("%d" , 0);
+#include <stdio.h>
+
+void isPrime(int num) {
+    if (num <= 1) {
+        printf("%d", 0);
+        return;
     }
-    else{
-    for(int i = 2; i*i <= n; i++){
-        if(n % i == 0){
-            cnt++;
+
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            printf("%d", 0);
+            return;
         }
     }
 
-    if(cnt > 0){
-        printf("%d" , 0);
-    }
-    else{
-        printf("%d" , 1);
-    }
-    }
-    
+    printf("%d", 1);
 }
