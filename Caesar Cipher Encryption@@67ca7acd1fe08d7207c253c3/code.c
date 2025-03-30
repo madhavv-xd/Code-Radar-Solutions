@@ -8,4 +8,6 @@ void caesarCipher(char message[], int shift, char encrypted[]) {
     }
 
     encrypted[len] = '\0'; 
+    
 }
+
