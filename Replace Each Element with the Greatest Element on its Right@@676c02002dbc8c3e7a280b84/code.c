@@ -9,15 +9,15 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Initialize a variable to keep track of the maximum seen so far
-    int max_so_far = -1;
-    for (int i = n - 1; i >= 0; i--) {
-        int temp = arr[i];  // Store the current element temporarily
-        arr[i] = max_so_far; // Replace the current element with the maximum so far
-        if (temp > max_so_far) {
-            max_so_far = temp; // Update the maximum so far
+    // Nested loops to modify the array as per your logic
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] > arr[i]) {  // Ensure the replacement is the maximum value
+                arr[i] = arr[j];
+            }
         }
     }
+    arr[n - 1] = -1; // Set the last element to -1
 
     // Print the modified array
     for (int i = 0; i < n; i++) {
