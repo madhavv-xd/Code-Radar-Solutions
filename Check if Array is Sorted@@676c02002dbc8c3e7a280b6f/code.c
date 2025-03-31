@@ -1,27 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int number;
-    scanf("%d", &number);
+    int n;
+    scanf("%d", &n);
 
-    int a[number];
-    for(int i = 0; i < number; i++) {
+    int a[n];
+    for(int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
 
-    int isSorted = 1; 
-    for(int i = 1; i < number; i++) {
-        if(a[i] < a[i-1]) {
-            isSorted = 0; 
-            break;
+    for(int i = 0; i < n; i++){
+        if(a[i] < a[i-1]){
+            printf("Sorted");
+        }
+        else{
+            printf("Not Sorted");
         }
     }
-
-    if(isSorted) {
-        printf("Sorted\n");
-    } else {
-        printf("Not Sorted\n");
-    }
-
-    return 0;
+    
 }
