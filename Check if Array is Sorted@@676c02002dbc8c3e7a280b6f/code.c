@@ -5,22 +5,23 @@ int main() {
     scanf("%d", &n);
 
     int a[n];
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    int sorted = 0;
-    for(int i = 1; i < n; i++){
-        if(a[i-1] <= a[i]) {
-            sorted = 1;
+
+    int sorted = 1;  
+    for (int i = 1; i < n; i++) {
+        if (a[i-1] > a[i]) {  
+            sorted = 0;
+            break;  
         }
     }
-    if(sorted == 1){
+
+    if (sorted) {
         printf("Sorted");
-    }
-    else if(sorted == 0){
+    } else {
         printf("Not Sorted");
     }
-    else{
-        printf("Not Sorted");
-    }
+
+    return 0;
 }
