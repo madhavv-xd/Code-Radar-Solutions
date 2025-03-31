@@ -22,7 +22,7 @@ int main() {
 
     bubbleSort(a , n);
 
-      printf("%d" , a[n-2]);
+    printf("%d" , a[n-2]);
       
     
     return 0;
