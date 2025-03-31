@@ -30,8 +30,8 @@ int main() {
             else{
                 i = j;
             }
+             printf("%d %d" , a[i] , cnt);
         }
-        printf("%d %d" , a[i] , cnt);
     }
     return 0;
 }
