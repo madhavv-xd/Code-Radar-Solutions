@@ -11,11 +11,18 @@ int main(){
     int target;
     scanf("%d" , &target);
 
-    for(int i = 0; i < n- 1; i++){
-        if(arr[i] == target){
-            printf("%d" , i);
+    int l = 0 , r = n -1;
+    while(l <= r){
+        int mid = l + (r - l)/2;
+        if(arr[mid] == target){
+            return mid;
         }
-        
+        if (arr[mid] < x){
+            l = mid + 1; 
+        }
+        else{
+            r = mid - 1;
+        }
     }
     return -1;
 }
