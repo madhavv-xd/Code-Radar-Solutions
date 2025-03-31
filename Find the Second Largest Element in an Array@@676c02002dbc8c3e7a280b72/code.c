@@ -23,6 +23,11 @@ int main() {
     bubbleSort(a , n);
 
       printf("%d" , a[n-2]);
+      for(int i = 0; i< n-1; i++){
+        if(arr[n] == arr[n-i]){
+            printf("%d" , -1);
+        }
+      }
     
     return 0;
 }
