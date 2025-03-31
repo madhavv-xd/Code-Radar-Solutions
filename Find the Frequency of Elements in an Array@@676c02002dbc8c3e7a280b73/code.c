@@ -24,14 +24,14 @@ int main() {
     int cnt  = 0;
     for(int i = 0; i < n-1; i++){
         for(int j = 0; i < n - 1; j++){
-            if(arr[i] == arr[j]){
+            if(a[i] == a[j]){
                 cnt++;
             }
             else{
                 i = j;
             }
         }
-        printf("%d %d" , arr[i] , cnt);
+        printf("%d %d" , a[i] , cnt);
     }
     return 0;
 }
