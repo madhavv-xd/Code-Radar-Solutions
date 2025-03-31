@@ -19,6 +19,5 @@ int main() {
             l = mid + 1;
         }
     }
-
-    return mid;
+    printf("%d" , arr[l]);
 }
