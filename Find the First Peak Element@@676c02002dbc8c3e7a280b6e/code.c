@@ -12,7 +12,7 @@ int main() {
     int bitonic = 0;
     for (int i = 0; i < n - 1; i++) {
         if (a[i] > a[i + 1]) {
-            is_bitonic = 1;
+            bitonic = 1;
             break;
         }
     }
