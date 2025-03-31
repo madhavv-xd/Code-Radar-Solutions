@@ -32,7 +32,7 @@ int main() {
             break;
         }
     }
-    return res;
+  printf("%d" , res);
 
     return 0;
 }
