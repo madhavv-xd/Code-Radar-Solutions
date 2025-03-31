@@ -21,11 +21,16 @@ int main() {
     }
     bubbleSort(arr , n);
     int cnt = 1;
-    for(int i = 1; i < n; i++){
+    for(int i = 0; i < n; i++){
         if(arr[i] == arr[i+1]){
             cnt++;
         }
-        
+        if(cnt > n/2){
+            printf("%d" , arr[i]);
+        }
+        else{
+            printf("-1");
+        }
     }
     return 0;
 }
