@@ -9,17 +9,15 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Nested loops to modify the array as per your logic
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] > arr[i]) {  // Ensure the replacement is the maximum value
-                arr[i] = arr[j];
-            }
+   int last = -1;
+   for(int i = n - 1; i>= 0; i--){
+        int temp = arr[i];
+        arr[i] = last;
+        if(temp > last){
+            last = temp;
         }
-    }
-    arr[n - 1] = -1; // Set the last element to -1
+   }
 
-    // Print the modified array
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
