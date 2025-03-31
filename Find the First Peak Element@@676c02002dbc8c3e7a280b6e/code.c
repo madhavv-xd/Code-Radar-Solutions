@@ -4,11 +4,7 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    if (n <= 0) {
-        printf("Invalid array size.\n");
-        return 0;
-    }
-
+   
     int a[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
