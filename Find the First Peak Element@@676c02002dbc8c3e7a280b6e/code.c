@@ -20,4 +20,6 @@ int main() {
         }
     }
     printf("%d" , a[l]);
+
+    return -1;
 }
