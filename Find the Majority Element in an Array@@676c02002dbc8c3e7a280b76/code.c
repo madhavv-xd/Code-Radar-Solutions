@@ -20,7 +20,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-   printf("%d" arr[n/2]);
+   printf("%d" , arr[n/2]);
 
     return 0;
 }
