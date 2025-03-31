@@ -26,7 +26,10 @@ int main() {
        if(a[i] == a[i+1]){
         cnt++;
        }
-       printf("%d %d" , a[i] , cnt);
+       else{
+        printf("%d %d" , a[i] , cnt);
+        cnt = 1;
+       }
     }
     return 0;
 }
