@@ -19,5 +19,5 @@ int main() {
             l = mid + 1;
         }
     }
-    printf("%d" , arr[l]);
+    printf("%d" , a[l]);
 }
