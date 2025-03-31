@@ -5,8 +5,16 @@ int main(){
 
     int arr[100];
     for(int i = 0; i < n - 1; i++){
-        printf("%d" , &arr[i]);
+        scanf("%d" , &arr[i]);
     }
 
-    
+    int target;
+    scanf("%d" , &target);
+
+    for(int i = 0; i < n- 1; i++){
+        if(arr[i] == target){
+            printf("%d" , i);
+        }
+    }
+    return 0;
 }
