@@ -12,7 +12,7 @@ int main() {
     int k;
     scanf("%d", &k);
 
-   int ans[n]
+   int ans[n];
    for(int i = 0; i<n; i++){
     ans[(i+k) % n ] = arr[i];
    }
