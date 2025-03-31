@@ -24,7 +24,7 @@ int main() {
 
       printf("%d" , a[n-2]);
       for(int i = 0; i< n-1; i++){
-        if(arr[n] == arr[n-i]){
+        if(a[n] == a[n-i]){
             printf("%d" , -1);
         }
       }
