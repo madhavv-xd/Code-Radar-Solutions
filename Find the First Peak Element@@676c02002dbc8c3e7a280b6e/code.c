@@ -18,7 +18,7 @@ int main() {
             l = mid + 1;
         }
     }
-    if(arr[l] > 1){
+    if(l > 1){
         printf("%d" , -1);
     }
     printf("%d\n", a[l]);
