@@ -22,13 +22,17 @@ int main() {
 
     bubbleSort(a, n);
     
-    for(int i = 0; i < n - 1; i++){
-        if(a[i] >= 0){
-            if(a[i+1] != a[i] + 1){
-                printf("%d" , a[i] + 1);
-            }
+     int res = 1;
+    for (int i = 0; i < size; i++) {
+        if (a[i] == res) {
+            res++;
+        }
+
+        else if (a[i] > res) {
+            break;
         }
     }
+    return res;
 
     return 0;
 }
