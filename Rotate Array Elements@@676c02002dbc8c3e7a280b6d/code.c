@@ -13,12 +13,10 @@ int main() {
     scanf("%d", &k);
 
     int ans[n];
-    for (int i = 0; i < n; i++) {
-        ans[(i + k) % n] = arr[i];
-    }
+    int ans[(i + k) % n] = arr[i];
 
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", ans[i]);
+    for(int i = 0; i < n; i++){
+        printf("%d" , ans[i]);
     }
 
     return 0;
