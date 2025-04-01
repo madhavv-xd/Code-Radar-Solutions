@@ -22,15 +22,15 @@ int main() {
     }
 
  
-    int largest = n-1;
+    int largest = arr[n - 1];
     int secondLargest = -1;
 
-    for(int i = n - 2; n >= 0; i--){
-        if(arr[i] != largest){
-          secondLargest = arr[i];
+    for (int i = n - 2; i >= 0; i--) {
+        if (arr[i] != largest) {  
+            secondLargest = arr[i];
             break;
         }
-    } 
+    }
 
     if (secondLargest == -1) {
         printf("-1");
