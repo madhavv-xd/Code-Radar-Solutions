@@ -27,7 +27,7 @@ int main() {
         cnt++;
     }
     else{
-        printf("%d %d" , a[i] , cnt);
+        printf("%d %d\n" , a[i] , cnt);
         cnt = 1;
     }
    }
