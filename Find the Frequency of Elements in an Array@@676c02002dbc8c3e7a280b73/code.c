@@ -22,7 +22,7 @@ int main() {
 
     bubbleSort(a , n);
    int cnt = 1;
-   for(int i = 0; i < n - 1; i++){
+   for(int i = 0; i <= n - 1; i++){
     if(a[i] == a[i+1]){
         cnt++;
     }
