@@ -21,15 +21,15 @@ int main() {
     }
 
     bubbleSort(a , n);
-    int cnt  = 1;
-    for(int i = 0; i <= n-1; i++){
-       if(a[i] == a[i+1]){
+   int cnt = 1;
+   for(int i = 0; i < n - 1; i++){
+    if(a[i] == a[i+1]){
         cnt++;
-       }
-       else{
-        printf("%d %d\n" , a[i] , cnt);
-        cnt = 1;
-       }
     }
+    else{
+        printf("%d %d" , a[i] , cnt);
+        cnt = 1;
+    }
+   }
     return 0;
 }
